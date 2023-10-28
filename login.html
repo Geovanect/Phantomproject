@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body><div class="textfield">
+    <h1 class="title">Olá,Seja Bem-Vindo a Phantom</h1>
+
+    <h3 class="boasvindas">É um prazer ter-lo conosco<br> efetue seu login e comece sua jornada.</h3>
+</div>
+    <form>
+        <div>
+            <label>Usuario</label>
+        </div>
+        <input type="email" name="usuario" id="user" placeholder="user">
+
+        <div>   
+            <label>Senha</label>
+        </div>
+        <input type="password" name="senha" id="password" onclick="validateUser()" placeholder="senha">
+
+        <div>
+            <button type="button" class="entrar" id="login-button"  onclick="logar()">Entrar</button>
+        </div>
+
+        <div>
+            <button type="button" class="cadastrar" id="register-button" onclick="registrar()">Registrar</button>
+
+        </div>
+        
+    </form>
+
+    <script>
+        function registrar(){   
+            window.location.href = "registrar.html";
+        }
+
+
+        function logar(){
+        var user =document.getElementById('user').value;
+        var password = document.getElementById('password').value;
+
+        if(user == "admin" && password == "admin"){
+            alert("Sucesso")
+            window.location.href = "home.html";
+        }else{
+            alert('Usuario ou senha incorreta');
+        }
+
+        }
+    </script>
+    
+</body>
+</html>
