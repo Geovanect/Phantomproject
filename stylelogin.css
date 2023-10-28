@@ -1,0 +1,66 @@
+body{
+    background-image: url("imagens/imagem.png.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+button,input{
+    
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: -webkit-fill-avaible;
+}
+.entrar{
+    background: white;
+    border: none;
+}
+button[disabled]{
+    opacity: 0.8;
+}
+button{
+    cursor: pointer;
+    
+}
+label{
+    color: white;
+    margin: 10px;
+}
+form{
+    border-radius: 60px;
+    padding: 20px;
+    border: none;
+    width: 250px;
+    background-color: rgb(0, 0, 0,0.4);
+    border-bottom: 100%;
+}
+p{
+    color: white;
+    margin: 10px;
+    margin-bottom: 20px;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+.textfield{
+    margin: 100px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    
+}
+
+
+@media only screen and (max-device-width: 900px){
+
+}
+@media only screen and (min-device-width: 700px){
+
+}
